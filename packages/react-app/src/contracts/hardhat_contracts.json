@@ -5,7 +5,7 @@
       "chainId": "4",
       "contracts": {
         "ExampleExternalContract": {
-          "address": "0xDbAdD19CE8C4dA9701B46F2C1E36300203296985",
+          "address": "0xA9bE7Fe0958E36e92FABA7b1d08c35F9b8244Fd3",
           "abi": [
             {
               "inputs": [],
@@ -30,7 +30,7 @@
           ]
         },
         "Staker": {
-          "address": "0xED27b31C12db8d653C4A5379E68dD19256F8d23c",
+          "address": "0x6F5C620F9B95B61C4616Ce6024E270710039D686",
           "abi": [
             {
               "inputs": [
@@ -115,19 +115,6 @@
               "type": "function"
             },
             {
-              "inputs": [
-                {
-                  "internalType": "uint256",
-                  "name": "amount",
-                  "type": "uint256"
-                }
-              ],
-              "name": "receive",
-              "outputs": [],
-              "stateMutability": "payable",
-              "type": "function"
-            },
-            {
               "inputs": [],
               "name": "stake",
               "outputs": [],
@@ -166,6 +153,10 @@
               "outputs": [],
               "stateMutability": "nonpayable",
               "type": "function"
+            },
+            {
+              "stateMutability": "payable",
+              "type": "receive"
             }
           ]
         }
@@ -178,7 +169,7 @@
       "chainId": "31337",
       "contracts": {
         "ExampleExternalContract": {
-          "address": "0xF32D39ff9f6Aa7a7A64d7a4F00a54826Ef791a55",
+          "address": "0x998abeb3E57409262aE5b751f60747921B33613E",
           "abi": [
             {
               "inputs": [],
@@ -203,7 +194,7 @@
           ]
         },
         "Staker": {
-          "address": "0xd6e1afe5cA8D00A2EFC01B89997abE2De47fdfAf",
+          "address": "0x70e0bA845a1A0F2DA3359C97E0285013525FFC49",
           "abi": [
             {
               "inputs": [
@@ -288,19 +279,6 @@
               "type": "function"
             },
             {
-              "inputs": [
-                {
-                  "internalType": "uint256",
-                  "name": "amount",
-                  "type": "uint256"
-                }
-              ],
-              "name": "receive",
-              "outputs": [],
-              "stateMutability": "payable",
-              "type": "function"
-            },
-            {
               "inputs": [],
               "name": "stake",
               "outputs": [],
@@ -339,6 +317,10 @@
               "outputs": [],
               "stateMutability": "nonpayable",
               "type": "function"
+            },
+            {
+              "stateMutability": "payable",
+              "type": "receive"
             }
           ]
         }

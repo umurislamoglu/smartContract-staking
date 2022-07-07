@@ -1,8 +1,8 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/Users/umurislamoglu/Desktop/projects/Scaffold-eth/challenge-1-decentralized-staking/packages/hardhat/contracts/ExampleExternalContract.sol": {
-      "lastModificationDate": 1656844805358,
+    "/Users/umurislamoglu/Desktop/projects/web3/etherium/challenge-1-decentralized-staking/packages/hardhat/contracts/ExampleExternalContract.sol": {
+      "lastModificationDate": 1657114322385,
       "contentHash": "afdca6ef0024742b12247ea7953ce029",
       "sourceName": "contracts/ExampleExternalContract.sol",
       "solcConfig": {
@@ -43,9 +43,9 @@
         "ExampleExternalContract"
       ]
     },
-    "/Users/umurislamoglu/Desktop/projects/Scaffold-eth/challenge-1-decentralized-staking/packages/hardhat/contracts/Staker.sol": {
-      "lastModificationDate": 1656872544574,
-      "contentHash": "d6c493a0e1a3e9a7a4b18220213c3d79",
+    "/Users/umurislamoglu/Desktop/projects/web3/etherium/challenge-1-decentralized-staking/packages/hardhat/contracts/Staker.sol": {
+      "lastModificationDate": 1657118719368,
+      "contentHash": "c1d263f6aaca428226f4c281e2aaa318",
       "sourceName": "contracts/Staker.sol",
       "solcConfig": {
         "version": "0.8.4",
@@ -88,8 +88,8 @@
         "Staker"
       ]
     },
-    "/Users/umurislamoglu/Desktop/projects/Scaffold-eth/challenge-1-decentralized-staking/packages/hardhat/node_modules/hardhat/console.sol": {
-      "lastModificationDate": 1656844822079,
+    "/Users/umurislamoglu/Desktop/projects/web3/etherium/challenge-1-decentralized-staking/packages/hardhat/node_modules/hardhat/console.sol": {
+      "lastModificationDate": 1657114333276,
       "contentHash": "cc4777addd464ea56fa35b1c45df0591",
       "sourceName": "hardhat/console.sol",
       "solcConfig": {

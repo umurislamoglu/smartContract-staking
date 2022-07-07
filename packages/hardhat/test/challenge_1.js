@@ -122,7 +122,7 @@ describe("🚩 Challenge 1: 🥩 Decentralized Staking App", function () {
           await network.provider.send("evm_mine")
 
           console.log('\t'," 🎉 calling execute")
-          const execResult = await expect(stakerContract.execute()).to.be.revertedWith('Threshold not reached');
+          const execResult = await stakerContract.execute();
           console.log('\t'," 🏷  execResult: ",execResult.hash)
 
           const result = await exampleExternalContract.completed()

@@ -25,7 +25,7 @@ contract Staker {
     }
 
     modifier deadlineReached(bool needsToBeReached) {
-        uint timeRemaining = timeLeft();
+        uint256 timeRemaining = timeLeft();
         if (needsToBeReached) {
             require(timeRemaining == 0, "Deadline is not reached yet");
         } else {
@@ -53,8 +53,9 @@ contract Staker {
     //  It should either call `exampleExternalContract.complete{value: address(this).balance}()` to send all the value
     function execute() public deadlineReached(true) notCompleted {
         uint256 totalBalance = address(this).balance;
-        require(totalBalance >= threshold, "Threshold not reached");
-        exampleExternalContract.complete{value: address(this).balance}();
+        if (totalBalance >= threshold) {
+            exampleExternalContract.complete{value: address(this).balance}();
+        }
     }
 
     // if the `threshold` was not met, allow everyone to call a `withdraw()` function
@@ -68,7 +69,7 @@ contract Staker {
     }
 
     // Add a `timeLeft()` view function that returns the time left before the deadline for the frontend
-    function timeLeft() public view returns (uint timeleft) {
+    function timeLeft() public view returns (uint256 timeleft) {
         if (block.timestamp >= deadline) {
             return 0;
         } else {
@@ -76,15 +77,7 @@ contract Staker {
         }
     }
 
-    // Add the `receive()` special function that receives eth and calls stake()
-    function receive(uint256 amount)
-        public
-        payable
-        deadlineReached(false)
-        notCompleted
-    {
-        
-        balances[msg.sender] += amount * 1000000000000000000 ;
-        emit Stake(msg.sender, amount * 1000000000000000000);
+    receive() external payable {
+        stake();
     }
 }
