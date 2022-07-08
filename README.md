@@ -1,5 +1,5 @@
 EtherScan addreses:
-ExampleExternalContract: 0xDbAdD19CE8C4dA9701B46F2C1E36300203296985
-Staker: 0xED27b31C12db8d653C4A5379E68dD19256F8d23c
+ExampleExternalContract: 0xA9bE7Fe0958E36e92FABA7b1d08c35F9b8244Fd3
+Staker: 0x6F5C620F9B95B61C4616Ce6024E270710039D686
 
-Live Project Address: uptight-cracker.surge.sh
+Live Project Address: tearful-spark.surge.sh
